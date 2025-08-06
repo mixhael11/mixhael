@@ -11,7 +11,7 @@ export default function App() {
   const [count, setCount] = useState(0)
 
   return (   
-      <Router>
+      <Router basename="/mixhael">
         <Navbar expand="lg" fixed="top" className="bg-body-tertiary">
   <Container>
     <Navbar.Brand href="#home">Michael Angelo Masangkay</Navbar.Brand>
