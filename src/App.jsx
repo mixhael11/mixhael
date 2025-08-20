@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Home from './pages/Home';
-import Projects from './pages/Projects';
 import Resume from './pages/Resume';
+import YelpReviewClassifier from './pages/YelpReviewClassifier';
+import AuctionSystem from './pages/AuctionSystem';
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -14,13 +15,13 @@ export default function App() {
       <Router basename="/mixhael">
         <Navbar expand="lg" fixed="top" className="bg-body-tertiary">
   <Container>
-    <Navbar.Brand href="#home">Michael Angelo Masangkay</Navbar.Brand>
+    <Navbar.Brand as={Link} to="/">Michael Angelo Masangkay</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
-        <Nav.Link as={Link} to="/">Home</Nav.Link>
-        <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-        <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
+      <Nav className="ms-auto">
+        <Nav.Link as={Link} to="/">Projects</Nav.Link>
+        <Nav.Link as={Link} to="/Info">Info</Nav.Link>
+        
 
        
       </Nav>
@@ -30,8 +31,9 @@ export default function App() {
 <Container style ={{marginTop: '80px'}}>
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/projects" element={<Projects />} />
-    <Route path="/resume" element={<Resume />} />
+    <Route path="/Info" element={<Resume />} />
+    <Route path="/YelpReviewClassifier" element={<YelpReviewClassifier />} />
+    <Route path="/Auction" element={<AuctionSystem />} />
   </Routes>
 </Container>
 </Router>
