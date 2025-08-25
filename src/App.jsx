@@ -7,6 +7,9 @@ import Home from './pages/Home';
 import Resume from './pages/Resume';
 import YelpReviewClassifier from './pages/YelpReviewClassifier';
 import AuctionSystem from './pages/AuctionSystem';
+import WikipediaStream from './pages/WikipediaStreams';
+import LibrarySystem from './pages/LibrarySystem';
+import TwitterDataMine from './pages/Twitterdatamine';
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +17,7 @@ export default function App() {
   return (   
       <Router basename="/mixhael">
         <Navbar expand="lg" fixed="top" className="bg-body-tertiary">
-  <Container>
+  <Container fluid>
     <Navbar.Brand as={Link} to="/">Michael Angelo Masangkay</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -34,6 +37,9 @@ export default function App() {
     <Route path="/Info" element={<Resume />} />
     <Route path="/YelpReviewClassifier" element={<YelpReviewClassifier />} />
     <Route path="/Auction" element={<AuctionSystem />} />
+    <Route path="/WikipediaStream" element={<WikipediaStream />} />
+    <Route path="/LibrarySystem" element={<LibrarySystem />} />
+    <Route path="/TwitterDataMine" element={<TwitterDataMine />} />
   </Routes>
 </Container>
 </Router>

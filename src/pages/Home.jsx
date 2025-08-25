@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import profileImage from '../assets/profile.jpg';
 import textclassification from '../assets/textclassification.png';
 import auctionlogo from '../assets/logo.png';
+import confusionmatrix from '../assets/confusionmatrix.png';
+import LibrarySystem from '../assets/LibrarySystem.png';
+import Twitterdata from '../assets/Twitterdata.png';
+import wikilogo from '../assets/wikilogo.jpg';
 import '../App.css';
 
 export default function Home() {
@@ -40,6 +44,37 @@ export default function Home() {
           />
             <h2 className="project-title">Auction System</h2>
           </Link> 
+
+
+          {/* Project 3 */}
+          <Link to="/WikipediaStream" className="project-card">
+          <img 
+            src={wikilogo}
+            alt="WikipediaStream" 
+            className="project-image" 
+          />
+            <h2 className="project-title">Frequency Estimation of Wikipedia Streams</h2>
+          </Link>
+
+          {/* Project 4 */}
+          <Link to="/LibrarySystem" className="project-card">
+          <img 
+            src={LibrarySystem}
+            alt="Library System" 
+            className="project-image"
+          />
+            <h2 className="project-title">Library System</h2>
+          </Link>
+          
+          {/* Project 5 */}
+          <Link to="/TwitterDataMine" className="project-card">
+          <img 
+            src={Twitterdata}
+            alt="Twitter Data Mine" 
+            className="project-image"
+          />
+            <h2 className="project-title">Twitter Bot Detection & Analysis</h2>
+          </Link>
         </div>
       </div>
     </div>
